@@ -1,0 +1,9 @@
+.wrapper{
+    background-image: url("assets/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    mix-blend-mode: multiply;
+    height: 1000px;
+}
+

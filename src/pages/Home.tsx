@@ -1,11 +1,23 @@
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
+import Mission from "../components/Mission/Mission";
 
 const Home = () => {
     return (
-        <div>
-            HOME PAGE
-            <br/>
-            <a href="/nasa">to the main page</a>
-        </div>
+        <>
+            <div className="wrapper">
+                <Header/>
+                <Mission/>
+            </div>
+
+
+
+
+
+
+
+            <Footer/>
+        </>
     );
 };
 
