@@ -1,13 +1,10 @@
-import * as React from "react";
-
 import logo from "../../assets/LOGO.png"
 import './Header.css'
-import {Box, Button, List, ListItem, SwipeableDrawer} from "@mui/material";
+import {Box, Button, SwipeableDrawer} from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 import {useState} from "react";
 
 import {deepPurple} from '@mui/material/colors';
-import {grey} from '@mui/material/colors';
 
 
 const Header = () => {
@@ -23,7 +20,6 @@ const Header = () => {
                     </div>
                     <div className="headerMenu1">
                         <a href="/" className="menuLink">home</a>
-                        <a className="menuLink" href="/solar-system">solar system</a>
                         <a className="menuLink" href="/missions">missions</a>
                         <div className="headerLogin">
                             <button className="login">login</button>
@@ -49,7 +45,6 @@ const Header = () => {
                             >
                                 <div className="headerMenu2">
                                     <a href="/" className="menuLink">home</a>
-                                    <a className="menuLink" href="/solar-system">solar system</a>
                                     <a className="menuLink" href="/missions">missions</a>
                                     <div className="headerLogin">
                                         <button className="login">login</button>

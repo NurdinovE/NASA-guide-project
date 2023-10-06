@@ -1,4 +1,6 @@
-import AppRouter from "./router/AppRouter";
+import { lazy } from "react";
+
+const AppRouter = lazy(() => import('./router/AppRouter'));
 
 
 import "./App.css"
@@ -6,7 +8,7 @@ import "./App.css"
 function App() {
 
   return (
-      <AppRouter/>
+    <AppRouter/>
   )
 }
 

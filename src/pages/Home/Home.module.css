@@ -1,0 +1,18 @@
+.home_page{
+    padding: 0px 150px;
+}
+
+h1{
+    color: var(--Black-10, #F5F5F5);
+    text-align: center;
+    font-family: Raleway;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 50px;
+}
+.solar_page{
+    margin-top: 150px;
+    width: 100%;
+}

@@ -1,8 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 
-import Home from "../pages/Home"
+import Home from "../pages/Home/Home"
 import Main from "../pages/Main";
 import Error from "../pages/Error";
+import Layout from "../latout/Layout";
 
 import {routerType} from "./interfaces/routerType";
 
@@ -27,9 +28,13 @@ const pagesData: routerType[] = [
 
 const AppRouter = () => {
     const pageRoutes = pagesData.map(({ path, title, element }: routerType) => {
-        return <Route key={title} path={`/${path}`} element={element} />;
+        return (
+            <Route path={"/"} element={<Layout />} key={path}>
+                <Route key={title} path={`/${path}`} element={element} />
+            </Route>
+        )
     });
 
-    return <Routes>{pageRoutes}</Routes>;
+    return <Routes> {pageRoutes} </Routes>
 };
 export default AppRouter;
